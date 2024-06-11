@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            background-color: #000;
+            color: #fff;
+            font: normal 20pt Arial;
+        }
+
+        h1 {
+            text-align: center;
+            color: #6cfa73;
+        }
+
+        script {
+            font-family: 'Courier New', Courier, monospace;
+            color: #ffbb00;
+        }
+
+        .caixa {
+            font-family: 'Courier New', Courier, monospace;
+            color: #ffbb00;
+            text-align: center;
+            letter-spacing: 5px;
+            line-height: 1em;
+            width: 100%;
+            margin: auto;
+            padding: 5px;
+            border: 1px solid seagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Aplicando Script</h1>
+        <div class="caixa">
+            <script>
+                var nome = prompt('Qual é o seu nome e sobrenome?')
+    
+                var idade = prompt('Qual sua idade?')
+    
+                document.write(`Olá, <strong>${nome}</strong>!. Seu nome tem ${nome.length} letras. <br />E a sua idade é ${idade}. <br /> E este texto é um Script`)
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
