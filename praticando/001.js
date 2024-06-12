@@ -8,6 +8,6 @@ function saudar(nome, sobrenome) {
 const nome = "João";
 const sobrenome = "Silva";
 
-let mensagem = saudar(nome, sobrenome);
+let mensagem = saudar(nome, sobrenome); // ! comentario
 
 console.log(mensagem)
