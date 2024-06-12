@@ -7,7 +7,9 @@
     <meta name="author" content="B.M.S">
     <meta name="description" content="Aula 4 – Criando o seu primeiro script. Com Prof°Guanabara">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <title>Meu Primeiro Programa...</title>
+    <link rel="stylesheet" href="../style.css">
+    <title>Introdução ao JS</title>
+    
     <style>
         body {
             font: normal 20pt Arial ;
@@ -17,6 +19,18 @@
         h1, p {
             text-align: center;
             color: #f0db4f;
+        }
+
+        svg {
+            margin-top: 80px;
+            color: #f0db4f;
+            width: 100px;
+            height: 100px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        svg:hover {
+            color: #a39435;
         }
     </style>
 </head>
@@ -39,6 +53,7 @@
             let mensagem = `Olá, ${nome}! Você tem ${idade} anos e ${gostaDeJS ? 'gosta' : 'não gosta'} de JavaScript.`;
             window.alert(mensagem);
         </script>
+        <a href="../index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 20C16.42 20 20 16.42 20 12C20 7.58 16.42 4 12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20ZM12 11H16V13H12V16L8 12L12 8V11Z"></path></svg></a>
     </main>
 </body>
 
