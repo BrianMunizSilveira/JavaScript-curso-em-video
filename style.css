@@ -16,7 +16,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: var(--BGC);
     color: #323330;
-    background: black url('../joan-gamell-ZS67i1HLllo-unsplash.jpg') center center no-repeat fixed;
+    background: black url('joan-gamell-ZS67i1HLllo-unsplash.jpg') center center no-repeat fixed;
     background-size: cover;
 }
 
