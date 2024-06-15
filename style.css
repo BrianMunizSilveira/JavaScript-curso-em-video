@@ -20,7 +20,7 @@ body {
     background-size: cover;
 }
 
-h1 {
+h1, h2 {
     font-family: var(--fonte1);
     color: var(--Amarelo-JS);
     letter-spacing: 10px;
