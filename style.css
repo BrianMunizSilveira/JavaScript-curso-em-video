@@ -4,8 +4,8 @@
 
 :root {
      --Amarelo-JS: #f0db4f;
-     --Cinza-JS: #323330;
-     --Cinza-JS2: #444;
+     --Cinza-JS: #32333085;
+     --Cinza-JS2: #444444dc;
      --Cinza-JS3: #555;
      --BGC: #f4f4f4;
 
@@ -16,8 +16,13 @@ body {
     font-family: Arial, sans-serif;
     background-color: var(--BGC);
     color: #323330;
-    background: black url('joan-gamell-ZS67i1HLllo-unsplash.jpg') center center no-repeat fixed;
+    background: black url('https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center center no-repeat fixed;
     background-size: cover;
+}
+
+img {
+    margin: 1rem;
+    border-radius: 1rem;
 }
 
 h1, h2 {

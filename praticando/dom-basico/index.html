@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/voodootikigod/logo.js/master/js.png"
+        type="image/x-icon">
+    <title>DOM Básico</title>
+    <style>
+        body {
+            font: 17pt Arial;
+            background-color: #d6d6d6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        main {
+            background-color: #fff;
+            width: 65%;
+            margin: 1rem;
+            text-align: center;
+        }
+
+        button {
+            padding: 1.5rem;
+            margin: 1.5rem;
+            border: none;
+        }
+
+        button:hover {
+            transition: all 0.3s;
+            background-color: rgb(193, 226, 255);
+            border: none;
+            border-radius: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Você pode alterar este título clicando no botão, Seja Criativo &#x1F609;</h1>
+            <p id="texto">Estou aprendendo JavaScript! <br> Com JS é possivel fazer diversas modificações interessantes,
+                como alterar o título e muito mais <br> Teste Já &darr;</p>
+        </section>
+    </main>
+    <button onclick="clicou()">Clique para alterar o título</button>
+    <footer>
+        <sub>&copy; | Que isso lek tmj 2024</sub>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

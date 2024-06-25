@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/voodootikigod/logo.js/master/js.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Dados com JS</title>
+</head>
+
+<body>
+    <main>
+        <h1>Entendendo o DOM (Document Object Model)</h1>
+        <hr>
+        <div class="section">
+            <h2>O que significa a sigla DOM?</h2>
+            <p>DOM significa <strong>Document Object Model</strong>. É uma interface de programação para documentos HTML
+                e XML que representa a página de forma que os programas possam modificar a estrutura, estilo e conteúdo
+                do documento.</p>
+        </div>
+        <hr>
+        <div class="section">
+            <h2>Para que serve o Document Object Model (DOM)?</h2>
+            <p>O DOM serve como uma representação estruturada do documento (como uma árvore de nós) que pode ser
+                acessada e manipulada por scripts (como JavaScript). Permite que os desenvolvedores interajam com a
+                página, alterando dinamicamente o conteúdo, estrutura e estilo do documento sem a necessidade de
+                recarregar a página.</p>
+        </div>
+        <hr>
+        <div class="section">
+            <h2>Como criar uma árvore DOM para o seu site?</h2>
+            <p>Quando o navegador carrega um documento HTML, ele cria automaticamente uma árvore DOM. Cada elemento HTML
+                é convertido em um nó na árvore. Por exemplo, uma estrutura simples de HTML:</p>
+            <div class="code">
+                <pre>
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Meu Título&lt;/h1&gt;
+    &lt;p&gt;Meu parágrafo.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+            </div>
+            <p>Seria representada na árvore DOM com o nó raiz <code>&lt;html&gt;</code>, que tem um filho
+                <code>&lt;body&gt;</code>, que por sua vez tem filhos <code>&lt;h1&gt;</code> e <code>&lt;p&gt;</code>.
+            </p>
+        </div>
+        <hr>
+        <div class="section">
+            <h2>Como usar o JavaScript para manipular o DOM?</h2>
+            <p>JavaScript pode ser usado para manipular o DOM de várias maneiras:</p>
+            <ul>
+                <li><strong>Alterar o conteúdo de elementos:</strong>
+                    <code>document.getElementById('meuId').innerHTML = 'Novo Conteúdo';</code></li>
+                <li><strong>Modificar atributos de elementos:</strong>
+                    <code>document.getElementById('meuId').setAttribute('class', 'novaClasse');</code></li>
+                <li><strong>Adicionar ou remover elementos:</strong> <code>document.createElement('div')</code> e
+                    <code>element.appendChild(novoElemento)</code></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="section">
+            <h2>Para que servem os elementos Parent e Child em um DOM?</h2>
+            <p>No DOM, os elementos <strong>Parent</strong> (pais) e <strong>Child</strong> (filhos) referem-se às
+                relações hierárquicas entre os nós da árvore:</p>
+            <ul>
+                <li><strong>Parent:</strong> É um nó que tem um ou mais nós filhos. Por exemplo,
+                    <code>&lt;body&gt;</code> é o parent de <code>&lt;h1&gt;</code> e <code>&lt;p&gt;</code>.</li>
+                <li><strong>Child:</strong> É um nó que está subordinado a outro nó. Por exemplo,
+                    <code>&lt;h1&gt;</code> e <code>&lt;p&gt;</code> são filhos de <code>&lt;body&gt;</code>.</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="section">
+            <h2>Como utilizar os métodos de acesso ao DOM no JavaScript?</h2>
+            <ul>
+                <li><strong>getElementById(id):</strong> Seleciona um elemento pelo seu atributo <code>id</code>.
+                    Exemplo:
+                    <div class="code"><code>let elemento = document.getElementById('meuId');</code></div>
+                </li>
+                <li><strong>getElementsByTagName(tag):</strong> Seleciona todos os elementos com o nome da tag
+                    especificada. Retorna uma coleção de elementos. Exemplo:
+                    <div class="code"><code>let paragrafos = document.getElementsByTagName('p');</code></div>
+                </li>
+                <li><strong>getElementsByName(name):</strong> Seleciona todos os elementos com o atributo
+                    <code>name</code> especificado. Retorna uma coleção de elementos. Exemplo:
+                    <div class="code"><code>let elementos = document.getElementsByName('meuNome');</code></div>
+                </li>
+                <li><strong>getElementsByClassName(class):</strong> Seleciona todos os elementos com a classe
+                    especificada. Retorna uma coleção de elementos. Exemplo:
+                    <div class="code"><code>let elementos = document.getElementsByClassName('minhaClasse');</code></div>
+                </li>
+                <li><strong>querySelector(seletor):</strong> Seleciona o primeiro elemento que corresponde ao seletor
+                    CSS especificado. Exemplo:
+                    <div class="code"><code>let elemento = document.querySelector('.minhaClasse');</code></div>
+                </li>
+                <li><strong>querySelectorAll(seletor):</strong> Seleciona todos os elementos que correspondem ao seletor
+                    CSS especificado. Retorna uma NodeList. Exemplo:
+                    <div class="code"><code>let elementos = document.querySelectorAll('.minhaClasse');</code></div>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <h1>Exercícios Práticos</h1>
+
+        <div class="section">
+            <h2>Trabalhando com Dados v2.0</h2>
+            <button onclick="inicio()">Clique para começar</button>
+            <section id="resultado">
+                <p>Aqui vai aparecer o resultado... </p>
+            </section>
+        </div>
+
+        <hr>
+
+        <div class="section">
+            <h2>Adicionar e Remover Itens na Lista</h2>
+            <p>Use o campo abaixo para digitar o nome de um item e clique em "Adicionar Item" para adicioná-lo à lista.
+                Para remover o último item, clique em "Remover Último Item".</p>
+            <input type="text" id="nomeItem" placeholder="Digite o nome do item">
+            <ul id="lista">
+                <!-- Itens serão adicionados aqui -->
+            </ul>
+            <button id="adicionar">Adicionar Item</button>
+            <button id="remover">Remover Último Item</button>
+        </div>
+
+        <script>
+            // Selecionar elementos
+            const lista = document.getElementById('lista');
+            const botaoAdicionar = document.getElementById('adicionar');
+            const botaoRemover = document.getElementById('remover');
+            const nomeItemInput = document.getElementById('nomeItem');
+
+            // Função para adicionar um item à lista
+            function adicionarItem() {
+                const nomeItem = nomeItemInput.value.trim();
+                if (nomeItem === "") {
+                    alert('Por favor, digite um nome para o item.');
+                    return;
+                }
+                const novoItem = document.createElement('li');
+                novoItem.textContent = nomeItem;
+                lista.appendChild(novoItem);
+                nomeItemInput.value = ''; // Limpa o campo de entrada
+            }
+
+            // Função para remover o último item da lista
+            function removerItem() {
+                if (lista.children.length > 0) {
+                    lista.removeChild(lista.lastChild);
+                } else {
+                    alert('Não há itens para remover!');
+                }
+            }
+
+            // Adicionar event listeners aos botões
+            botaoAdicionar.addEventListener('click', adicionarItem);
+            botaoRemover.addEventListener('click', removerItem);
+        </script>
+        <script src="script.js"></script>
+</body>
+
+</html>
