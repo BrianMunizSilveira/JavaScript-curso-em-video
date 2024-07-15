@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../icon-js.webp" type="image/x-icon">
+    <title>Eventos com DOM</title>
+    <style>
+        button#botao {
+            font: italic 18pt monospace;
+            margin: 10px;
+            padding: 10px;
+            width: 250px;
+            height: 250px;
+            line-height: 230px;
+            text-align: center;
+            background-color: #3B3561;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercício 1: Alteração de cor ao passar o mouse</h1>
+    <button id="botao" onmouseenter="passando()" onmouseout="saiu()">
+        Passe o mouse...
+    </button>
+</body>
+
+<script>
+    function passando() {
+        var botao = document.getElementById('botao');
+        botao.innerText = 'Passando..';
+        botao.style.backgroundColor = '#51A3A3';
+    }
+
+    function saiu() {
+        var botao = document.getElementById('botao');
+        botao.innerText = 'Saiu..';
+        botao.style.backgroundColor = '#3B3561';
+    }
+</script>
+
+</html>

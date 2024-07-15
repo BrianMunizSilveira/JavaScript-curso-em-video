@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../icon-js.webp" type="image/x-icon">
+    <title>Eventos com DOM</title>
+    <style>
+        button#contador {
+            font: bold 16pt sans-serif;
+            margin: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        p#resultado {
+            font: italic 18pt monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercício 2: Contador de cliques</h1>
+    <p>Quantos clicks você consegue? &#X1F440;</p>
+    <button id="contador" onclick="incrementar()">
+        &#X1F525; Clique aqui! &#X1F525;
+    </button>
+    <p id="resultado">
+        Cliques: 0 
+    </p>
+</body>
+
+<script>
+    var contador = 0;
+
+    function incrementar() {
+        contador++;
+        var textoResultado = 'Cliques: ' + contador;
+        if (contador > 0) {
+            textoResultado += '  😎';
+        }
+        document.getElementById('resultado').innerText = textoResultado;
+        if (contador > 9) {
+            textoResultado += '  👀';
+        }
+        document.getElementById('resultado').innerText = textoResultado;
+    }
+</script>
+
+</html>
