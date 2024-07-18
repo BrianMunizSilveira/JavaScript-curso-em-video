@@ -90,6 +90,13 @@ pre {
     overflow: auto;
 }
 
+footer {
+    background-color: var(--Cinza-JS);
+    color: var(--Amarelo-JS);
+    padding: 20px;
+    text-align: center;
+}
+
 @media (max-width: 480px) {
 
     h1 {
