@@ -4,24 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../exercicios/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../icon-js.webp" type="image/x-icon">
     <title>Dados com JS</title>
     <style>
         body {
-            font: 12pt Arial;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
-        button {
-            font-size: 12pt;
-            padding: 30px;
+        h1 {
+            text-align: center;
         }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #0069d9;
+        } 
     </style>
     <script src="script003.js"></script>
 </head>
 
 <body>
-    <h1>Trabalhando com Dados V1.0</h1>
-    <button onclick="inicio()">Clique para começar</button>
+    <main class="container">
+        <h1>Trabalhando com Dados V1.0</h1>
+        <button onclick="inicio()" class="button">Clique para começar</button>
+    </main>
 </body>
 
 </html>

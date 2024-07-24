@@ -4,36 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de índice e exercícios para o curso de JavaScript.">
+    <meta name="author" content="B.M.S">
     <title>JS | Cursoemvideo</title>
-    <link rel="shortcut icon" href="https://raw.githubusercontent.com/voodootikigod/logo.js/master/js.png" type="image/x-icon">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./icon-js.webp" type="image/x-icon">
+    <link rel="preload" href="./reset.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./reset.css"></noscript>
+    <link rel="preload" href="./main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./main.css"></noscript>
 </head>
 
 <body>
     <main>
-        <header>
-            <h1>Índice das Aulas de JavaScript</h1>
-            <img src="https://i.giphy.com/HscDLzkO8EOTmgkhQP.webp" alt="Gif do indice">
-        </header>
-        <nav>
-            <ul>
-                <li><a href="./exercicios/aula4/ex001.html">Hello World!</a></li>
-                <li><a href="./exercicios/aula06/ex002.html">Variáveis e Tipos Primitivos</a></li>
-                <li><a href="./exercicios/aula06/ex003.html">Tratamento de Dados</a></li>
-                <li><a href="./exercicios/aula06/ex004.html">Aplicando Script</a></li>
-                <li><a href="./exercicios/ex002/index.html">Interagindo com um botão</a></li>
-                <li><a href="./exercicios/ex003/index.html">Dados com JS v1.0</a></li>
-                <li><a href="./exercicios/ex004/index.html">Dados com JS v2.0</a></li>
-                <li><a href="./exercicios/aula09/ex005.html">Iniciando com </a></li>
-                <li><a href="./exercicios/aula10/ex006.html">Eventos com DOM</a></li>
-                <li><a href="./exercicios/aula10/ex007.html">Somando números</a></li>
-            </ul>
-        </nav>
+        <!-- Índice das Aulas -->
+        <section>
+            <header>
+                <h1>Índice das Aulas de JavaScript</h1>
+                <img src="https://i.giphy.com/HscDLzkO8EOTmgkhQP.webp" alt="Gif do índice" loading="lazy">
+            </header>
+            
+            <nav>
+                <ul>
+                    <li><a href="./exercicios/aula4/ex001.html">Hello World!</a></li>
+                    <li><a href="./exercicios/aula06/ex002.html">Variáveis e Tipos Primitivos</a></li>
+                    <li><a href="./exercicios/aula06/ex003.html">Tratamento de Dados</a></li>
+                    <li><a href="./exercicios/aula06/ex004.html">Aplicando Script</a></li>
+                    <li><a href="./exercicios/ex002/index.html">Interagindo com um botão</a></li>
+                    <li><a href="./exercicios/ex003/index.html">Dados com JS v1.0</a></li>
+                    <li><a href="./exercicios/ex004/index.html">Dados com JS v2.0</a></li>
+                    <li><a href="./exercicios/aula09/ex005.html">Iniciando com </a></li>
+                    <li><a href="./exercicios/aula10/ex006.html">Eventos com DOM</a></li>
+                    <li><a href="./exercicios/aula10/ex007.html">Somando números</a></li>
+                </ul>
+            </nav>
+        </section>
+        
+        <!-- Praticando -->
+        <section>
             <header>
                 <h2>Praticando</h2>
-                <img src="https://i.giphy.com/iIqmM5tTjmpOB9mpbn.webp" alt="Gif praticando">
+                <img src="https://i.giphy.com/iIqmM5tTjmpOB9mpbn.webp" alt="Gif praticando" loading="lazy">
             </header>
+            
             <nav>
                 <ul>
                     <li><a href="./praticando/concatenacao-placeholders/001.html">Concatenação e Placeholders</a></li>
@@ -56,20 +68,27 @@
                     <li><a href="./exercicios/aula10/praticando/fixacao04.html">Validando Formulário</a></li>
                 </ul>
             </nav>
+        </section>
+        
+        <!-- Desafios -->
+        <section>
             <header>
                 <h2>Desafios</h2>
-                <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDB6NGh3MTIyaHVoeW92aHZtdThyejQwN3UwZDZ5a3VkdGY0bDE5byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mTPjPA6SSXgTsnZ1Dh/giphy.webp" alt="Gif de desafio">
+                <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDB6NGh3MTIyaHVoeW92aHZtdThyejQwN3UwZDZ5a3VkdGY0bDE5byZlcD12MV9pbnRlcm5faWZfYnlfaWQmY3Q9Zw/mTPjPA6SSXgTsnZ1Dh/giphy.webp" alt="Gif de desafio" loading="lazy">
             </header>
+            
             <nav>
                 <ul>
                     <li><a href="./desafios/d001/d001.html">Desafio 001</a></li>
                     <li><a href="./desafios/d002/d002.html">Desafio 002</a></li>
                 </ul>
             </nav>
+        </section>
     </main>
 
+    <!-- Rodapé -->
     <footer>
-        <p>Ultima atualização: <i>17/07/2024</i> &#X1F527; </p>
+        <p>Última atualização: <i>24/07/2024</i> &#x1F527; <br> Made in with &#X2764;&#XFE0F; by <a href="https://github.com/BrianMunizSilveira" target="_blank" rel="external">Brian Muniz Silveira</a></p>
     </footer>
 </body>
 
