@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Selecionando e Modificando Elementos com DOM">
+    <meta name="author" content="B.M.S">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../icon-js.webp" type="image/x-icon">
+    <title>Selecionando e Modificando Elementos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: inset 8px 8px 20px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #minhaDiv {
+            padding: 50px;
+        }
+
+        #minhaDiv p {
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #minhaDiv p:hover {
+            background-color: #4a619e;
+            color: #f5f5f5;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="minhaDiv">
+            <p>Hello World</p>
+        </div>
+    </main>
+</body>
+
+<script>
+    const minhaDiv = document.getElementById('minhaDiv');
+    minhaDiv.addEventListener('click', () => {
+        minhaDiv.textContent = 'Hellow DOM!';
+    })
+</script>   
+
+</html>

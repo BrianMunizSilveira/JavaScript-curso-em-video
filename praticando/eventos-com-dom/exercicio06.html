@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Adicionaodo um Novo Elemento com DOM">
+    <meta name="author" content="B.M.S">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../icon-js.webp" type="image/x-icon">
+    <title>Adicionando um Novo Elemento</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: inset 8px 8px 20px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #minhaLista {
+            list-style: none;
+            padding: 0;
+        }
+
+        #minhaLista li {
+            margin-bottom: 10px;
+        }
+
+        #minhaLista li:last-child {
+            margin-bottom: 0;
+        }
+
+        #minhaLista li:hover {
+            background-color: #4a619e;
+            color: #f5f5f5;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <ul id="minhaLista">
+                <li>Item 01</li>
+                <li>Item 02</li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+<script>
+    const minhaLista = document.getElementById('minhaLista');
+    const newItem = document.createElement('li');
+    newItem.textContent = 'Item 03';
+    minhaLista.appendChild(newItem);
+</script>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adicionando um Event Listener">
+    <meta name="author" content="B.M.S">
+    <link rel="shortcut icon" href="../../icon-js.webp" type="image/x-icon">
+    <title>Adicionando um Event Listener</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 10px;
+            background-color: aliceblue;
+            border: 1px solid black;
+            width: 300px;
+            font-size: 20pt;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button {
+            font-size: 18pt;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 10px;
+            border: 1px solid black;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            cursor: pointer;
+            transition: 0.5s;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: green;
+            color: white;
+        }
+
+        #meuBotao {
+            background-color: green;
+            color: white;
+        }
+
+        #meuBotao:hover {
+            background-color: red;
+        }
+
+        #meuBotao:active {
+            background-color: blue;
+        } 
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <button id="meuBotao">Clique em Mim</button>
+        </div>
+    </main>
+    <script>
+        const meuBotao = document.getElementById('meuBotao');
+        meuBotao.addEventListener('click', function() {
+            alert('Você clicou no botão!');
+        });
+    </script>
+</body>
+
+</html>
