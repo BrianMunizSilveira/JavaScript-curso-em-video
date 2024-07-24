@@ -55,25 +55,7 @@
         <input type="button" value="Calcular" onclick="calcular()">
         <div id="res"></div>
     </main>
-    <script>
-        function calcular() {
-            var num1 = Number(document.querySelector('input#num1').value);
-            var num2 = Number(document.querySelector('input#num2').value);
-            var operacao = document.querySelector('select#operacao').value;
-            var res = document.querySelector('div#res');
-
-            if (operacao === 'add') {
-                resultado = num1 + num2;
-            } else if (operacao === 'sub') 
-            resultado = num1 - num2;
-            else if (operacao === 'mul') 
-            resultado = num1 * num2;
-            else if (operacao === 'div') 
-            resultado = num1 / num2;
-
-            res.innerHTML = `<p>O resultado da operação é <strong>${resultado}</strong></p>`
-        }
-    </script>
+    <script src="./ex02.js"></script>
     <footer>Made in with &#X2764;&#XFE0F;</footer>
 </body>
 

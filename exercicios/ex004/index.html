@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://raw.githubusercontent.com/voodootikigod/logo.js/master/js.png"
-        type="image/x-icon">
+    <link rel="shortcut icon" href="../../icon-js.webp" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Dados com JS</title>
 </head>
@@ -127,39 +126,7 @@
             <button id="remover">Remover Último Item</button>
         </div>
 
-        <script>
-            // Selecionar elementos
-            const lista = document.getElementById('lista');
-            const botaoAdicionar = document.getElementById('adicionar');
-            const botaoRemover = document.getElementById('remover');
-            const nomeItemInput = document.getElementById('nomeItem');
-
-            // Função para adicionar um item à lista
-            function adicionarItem() {
-                const nomeItem = nomeItemInput.value.trim();
-                if (nomeItem === "") {
-                    alert('Por favor, digite um nome para o item.');
-                    return;
-                }
-                const novoItem = document.createElement('li');
-                novoItem.textContent = nomeItem;
-                lista.appendChild(novoItem);
-                nomeItemInput.value = ''; // Limpa o campo de entrada
-            }
-
-            // Função para remover o último item da lista
-            function removerItem() {
-                if (lista.children.length > 0) {
-                    lista.removeChild(lista.lastChild);
-                } else {
-                    alert('Não há itens para remover!');
-                }
-            }
-
-            // Adicionar event listeners aos botões
-            botaoAdicionar.addEventListener('click', adicionarItem);
-            botaoRemover.addEventListener('click', removerItem);
-        </script>
+        <script src="./script01.js"></script>
         <script src="script.js"></script>
 </body>
 

@@ -52,19 +52,7 @@
         Idade: <input type="number" name="txtidade" id="txtidade"> anos
         <input type="button" value="Verificar" onclick="verificar()">
         <div id="res"></div>
-        <script>
-            function verificar() {
-                var txtidade = window.document.getElementById('txtidade');
-                var res = window.document.getElementById('res');
-                var idade = Number(txtidade.value);
-                res.innerHTML = `<p>Sua idade é <strong>${idade} anos</strong></p>`
-                if (idade < 18) {
-                    res.innerHTML += `<p>Voce ainda é <strong class="menor">MENOR</strong> de idade.</p>`
-                } else {
-                    res.innerHTML += `<p>Você é <strong>MAIOR</strong> de idade.</p>`
-                }
-            }
-        </script>
+        <script src="./ex01.js"></script>
     </main>
     <footer>Made in with &#X2764;&#XFE0F;</footer>
 </body>
