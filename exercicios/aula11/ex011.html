@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="exercicio011 - Condições com JS">
+    <meta name="author" content="B.M.S">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../icon-js.webp" type="image/x-icon">
+    <style>
+        body {
+            background-color: rgb(70, 142, 236);
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        div#res {
+            margin-top: 20px;
+        }
+
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+        }
+
+        p {
+            color: rgb(255, 255, 255);
+        }
+
+        strong.br {
+            color: rgb(2, 248, 2);
+        }
+    </style>
+    <title>Brasileiro &#X1F1E7;&#X1F1F7; ou Estrangeiro?</title>
+</head>
+
+<body>
+    <main>
+        <h1>Brasileiro ou Estrangeiro?</h1>
+        Em qual páis você nasceu ?: <input type="text" name="txtpais" id="txtpais"> <input type="button" value="verificar" onclick="verificar()">
+        <div id="res"></div>
+        <script>
+            function verificar() {
+                var txtpais = window.document.getElementById('txtpais');
+                var res = window.document.getElementById('res');
+                var pais = (txtpais.value);
+                res.innerHTML = `<p>Você nasceu no/a <strong>${pais}</strong>.</p>`
+                if (pais == 'Brasil') {
+                    res.innerHTML += '<p>Voce é <strong class="br">Brasileiro! &#X1F1E7;&#X1F1F7;</strong></p>'
+                } else {
+                    res.innerHTML += '<p>Voce é <strong>Estrangeiro!</strong></p>'
+                }
+
+            }
+        </script>
+    </main>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+var pais = 'Brasil'
+console.log(`Vivendo em ${pais}`);
+if (pais != 'Brasil') {
+console.log('Você é Estrangeiro!');
+} else {
+console.log('Você é Brasileiro!');
+} -->

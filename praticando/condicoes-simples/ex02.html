@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta>
+    <meta>
+    <link rel="shortcut icon" href="../../icon-js.webp" type="image/x-icon">
+    <title>Calculadora Simples</title>
+    <style>
+        body {
+            background-color: rgb(70, 142, 236);
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        div#res {
+            margin-top: 20px;
+        }
+
+        input, select {
+            font: normal 18pt Arial;
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+        }
+
+        p {
+            color: rgb(255, 255, 255);
+        }
+
+        strong {
+            color: rgb(2, 248, 2);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Calculadora Simples</h1>
+        Número 1: <input type="number" name="num2" id="num1"><br><br>
+        Número 2: <input type="number" name="num2" id="num2"><br><br>
+        Operação: 
+        <select name="operacao" id="operacao">
+            <option value="add">Adição</option>
+            <option value="sub">Subtração</option>
+            <option value="mul">Multiplicação</option>
+            <option value="div">Divisão</option>
+        </select><br><br>
+        <input type="button" value="Calcular" onclick="calcular()">
+        <div id="res"></div>
+    </main>
+    <script>
+        function calcular() {
+            var num1 = Number(document.querySelector('input#num1').value);
+            var num2 = Number(document.querySelector('input#num2').value);
+            var operacao = document.querySelector('select#operacao').value;
+            var res = document.querySelector('div#res');
+
+            if (operacao === 'add') {
+                resultado = num1 + num2;
+            } else if (operacao === 'sub') 
+            resultado = num1 - num2;
+            else if (operacao === 'mul') 
+            resultado = num1 * num2;
+            else if (operacao === 'div') 
+            resultado = num1 / num2;
+
+            res.innerHTML = `<p>O resultado da operação é <strong>${resultado}</strong></p>`
+        }
+    </script>
+    <footer>Made in with &#X2764;&#XFE0F;</footer>
+</body>
+
+</html>
