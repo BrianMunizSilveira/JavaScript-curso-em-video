@@ -73,6 +73,10 @@ nav ul li a:hover {
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.5);
 }
 
+nav ul {
+    columns: 2;
+}
+
 footer {
     background-color: var(--content-background-color);
     color: var(--primary-color);
