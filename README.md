@@ -14,3 +14,11 @@
  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="300px" height="300px"/>
  
 </div>
+
+## Estrutura do Repositório
+
+O repositório está organizado da seguinte forma:
+
+- **Índice das Aulas**: Contém links para todos os exercícios abordados nas aulas do curso, organizados por temas e tópicos.
+- **Praticando**: Seção dedicada a exercícios práticos adicionais para consolidar o conhecimento em JavaScript.
+- **Desafios**: Desafios propostos para testar e aprimorar minhas habilidades ao decorrer do curso.
