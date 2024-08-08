@@ -1,0 +1,117 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    background-color: #161925;
+    color: white;
+    font: normal 20pt Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    background-color: #2e86ab;
+    color: white;
+    border-radius: 15px;
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    font-size: 28pt;
+    margin-bottom: 20px;
+    color: #f1d302;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #161925;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+label {
+    font-size: 18pt;
+    margin-bottom: 10px;
+    color: #f1d302;
+}
+
+input[type="number"],
+input[type="button"] {
+    font: normal 14pt Arial, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="number"] {
+    text-align: center;
+    background-color: #000;
+    color: #54ff32;
+    border: 2px solid #f1d302;
+}
+
+input[type="button"] {
+    background-color: #faa916;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #f1d302;
+}
+
+div#res {
+    margin-top: 20px;
+    font-size: 18pt;
+    color: #54ff32;
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24pt;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    label {
+        font-size: 16pt;
+    }
+
+    input[type="number"],
+    input[type="button"] {
+        font-size: 12pt;
+        padding: 8px;
+    }
+}
