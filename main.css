@@ -1,18 +1,28 @@
 :root {
+    /* Cores */
     --primary-color: #61dafb;
     --secondary-color: #f7df1e;
     --background-color: #282c34;
     --content-background-color: #20232a;
     --text-color: #ffffff;
+    
+    /* Tipografia */
     --font-family: 'Arial', sans-serif;
     --font-size-base: 1rem;
     --font-size-large: 1.5rem;
     --font-size-small: 0.875rem;
+
+    /* Espaçamentos */
+    --spacing-xs: 0.25rem;
     --spacing-small: 0.5rem;
     --spacing-medium: 1rem;
     --spacing-large: 2rem;
+
+    /* Bordas e sombras */
     --border-radius: 0.5rem;
     --box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.5);
+
+    /* Transições */
     --transition-duration: 0.3s;
 }
 
@@ -26,12 +36,13 @@ body {
 }
 
 main {
-    max-width: 100vw; 
+    max-width: 100%;
     margin: 0 auto;
     padding: var(--spacing-large);
     background-color: var(--content-background-color);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    transition: padding var(--transition-duration);
 }
 
 header h1, header h2 {
@@ -49,6 +60,8 @@ section {
 nav ul {
     list-style-type: none;
     padding: 0;
+    column-count: 2;
+    column-gap: var(--spacing-medium);
 }
 
 nav ul li {
@@ -73,10 +86,6 @@ nav ul li a:hover {
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.5);
 }
 
-nav ul {
-    columns: 2;
-}
-
 footer {
     background-color: var(--content-background-color);
     color: var(--primary-color);
@@ -89,6 +98,7 @@ footer {
 footer a {
     color: var(--secondary-color);
     text-decoration: none;
+    transition: text-decoration var(--transition-duration);
 }
 
 footer a:hover {
@@ -99,12 +109,7 @@ footer i {
     color: var(--secondary-color);
 }
 
-/* Estilo especial para os links que não podem ser executados no navegador */
-nav ul li a .ri-javascript-fill {
-    color: var(--content-background-color);
-}
-
-/* Adicionando ícones */
+/* Ícones */
 header h1::before, header h2::before {
     content: '\f013'; /* ícone (gear) */
     font-family: 'Font Awesome 5 Free';
@@ -114,7 +119,7 @@ header h1::before, header h2::before {
 }
 
 section header::before {
-    content: '\f121'; /* ícone (code) */
+    content: '//'; /* comentário (code) */
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     margin-right: var(--spacing-small);
@@ -122,7 +127,7 @@ section header::before {
 }
 
 /* Responsividade */
-@media (max-width: 48rem) { /* 768px */
+@media (max-width: 768px) {
     body {
         padding: var(--spacing-small);
     }
@@ -131,20 +136,28 @@ section header::before {
         padding: var(--spacing-medium);
     }
 
+    nav ul {
+        column-count: 1;
+    }
+
     nav ul li a {
-        padding: var(--spacing-small) var(--spacing-small);
+        padding: var(--spacing-small);
+        font-size: var(--font-size-small);
+    }
+
+    footer {
         font-size: var(--font-size-small);
     }
 }
 
-@media (max-width: 30rem) { /* 480px */
+@media (max-width: 480px) {
     header h1, header h2 {
         font-size: var(--font-size-large);
         padding-bottom: var(--spacing-small);
     }
 
     nav ul li a {
-        padding: var(--spacing-small) var(--spacing-small);
+        padding: var(--spacing-small);
         font-size: var(--font-size-small);
     }
 
