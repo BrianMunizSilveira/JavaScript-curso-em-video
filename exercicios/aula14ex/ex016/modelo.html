@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="shortcut icon" href="../../../icon-js.webp" type="image/x-icon">
+    <title>Super Contador</title>
+</head>
+
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div>
+            <p>Início:   <input type="number" name="inicio" id="inicio" placeholder="Digite o número inicial"></p>
+            <p>Fim:      <input type="number" name="fim" id="fim" placeholder="Digite o número final"></p>
+            <p>Passos:   <input type="number" name="passo" id="passo" placeholder="Passos da contagem"></p>
+
+            <button value="contar" onclick="contar()">Contar</button>
+        </div>
+        <div>
+            <p id="resultado">Preparando a contagem...</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
