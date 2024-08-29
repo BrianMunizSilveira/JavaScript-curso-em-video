@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios com For em JavaScript</title>
+    <link rel="shortcut icon" href="../../icon-js.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Exercícios com <code><i>For</i></code> em JavaScript</h1>
+
+        <!-- Exercício 1: Soma de 1 a 100. -->
+        <div class="exercise">
+            <h2>1. Soma dos Números de 1 a 100</h2>
+            <p>Escreva um programa que utilize um laço `<code><i>for</i></code>` para somar todos os números de 1 a 100.
+                No final, o programa deve exibir a soma.</p>
+            <hr>
+            <button onclick="somar1a100()">Calcular Soma</button>
+            <div id="somaOutput" class="output"></div>
+        </div>
+
+        <!-- Exercício 2: Sequência de Fibonacci. -->
+        <div class="exercise">
+            <h2>2. Sequência de Fibonacci</h2>
+            <p>Escreva um programa que peça ao usuário um número e exiba a tabuada desse número de 1 a 10, usando um
+                laço <code><i>for</i></code>.</p>
+            <hr>
+            <input type="number" id="fibonacciLimite" placeholder="Digite um número">
+            <button onclick="exibirFibonacci()">Gerar Fibonacci</button>
+            <div id="fibonacciOutput" class="output"></div>
+        </div>
+
+        <!-- Exercício 3: Números Pares. -->
+        <div class="exercise">
+            <h2>3. Números Pares de 1 a 50</h2>
+            <p>Escreva um programa que exiba todos os números pares entre 1 e 50.</p>
+            <hr>
+            <button onclick="mostrarPares()">Mostrar Pares</button>
+            <div id="paresOutput" class="output"></div>
+        </div>
+
+        <!-- Exercício 4: Soma dos Números Ímpares. -->
+        <div class="exercise">
+            <h2>4. Soma dos Números Ímpares</h2>
+            <p>Escreva um programa que calcule a soma de todos os números ímpares de 1 a um número fornecido pelo
+                usuário.</p>
+            <hr>
+            <input type="number" id="somaImparesLimite" placeholder="Digite um número">
+            <button value="somaImpares" onclick="somaImpares()">Calcular Soma</button>
+            <div id="somaImparesOutput" class="output"></div>
+        </div>
+
+        <!-- Exercício 5: Fatorial. -->
+        <div class="exercise">
+            <h2>5. Fatorial de um Número</h2>
+            <p>Escreva um programa que calcule o fatorial de um número inteiro positivo, usando um laço
+                <code><i>for</i></code>.
+            </p>
+            <hr>
+            <input type="number" id="fatorialNumero" placeholder="Digite um número">
+            <button onclick="calcularFatorial()">Calcular Fatorial</button>
+            <div id="fatorialOutput" class="output"></div>
+        </div>
+
+        <!-- Exercício 6: Reverso de uma String. -->
+        <div class="exercise">
+            <h2>6. Reverso de uma Palavra</h2>
+            <p>Escreva um programa que peça uma palavra e exiba a versão invertida dessa palavra usando um laço
+                <code><i>for</i></code>.
+            </p>
+            <hr>
+            <input type="text" id="palavraReverso" placeholder="Digite uma palavra">
+            <button onclick="inverterPalavra()">Inverter Palavra</button>
+            <div id="reversoOutput" class="output"></div>
+        </div>
+
+        <!-- Exercício 7: Contagem Regressiva. -->
+        <div class="exercise">
+            <h2>7. Contagem Regressiva</h2>
+            <p>Escreva um programa que exiba uma contagem regressiva de um número fornecido pelo usuário até 0.</p>
+            <hr>
+            <input type="number" name="contagemNumero" id="contagemNumero" placeholder="Digite um número">
+            <button onclick="contagemReversa()">Contar Regressivamente</button>
+            <div id="contagemOutput" class="output"></div>
+        </div>
+
+        <!-- Exercício 8: Contar Letras de uma String. -->
+        <div class="exercise">
+            <h2>8. Contar Letras de uma String</h2>
+            <p>Escreva um programa que conte quantas vezes uma letra específica aparece em uma string fornecida pelo
+                usuário.</p>
+            <hr>
+            <input type="text" name="textString" id="textoString" placeholder="Digite uma String">
+            <input type="text" name="letraEspecifica" id="letraEspecifica" placeholder="Digite uma letra">
+            <button onclick="contarLetras()">Contar Letras</button>
+            <div id="contagemLetrasOutput" class="output"></div>
+        </div>
+
+        <!-- Exercício 9: Números de 1 a N em Ordem Decrescente. -->
+        <div class="exercise">
+            <h2>9. Números em Ordem Decrescente</h2>
+            <p>Escreva um programa que exiba os números de 1 até um número fornecido pelo usuário em ordem decrescente.</p>
+            <hr>
+            <input type="number" id="ordemNumero" placeholder="Digite um número">
+            <button onclick="ordemDecrescente()">Mostrar Números</button>
+            <div id="ordemOutput" class="output"></div>
+        </div>
+
+        <!-- Exercício 10: Tabela de Multiplicação -->
+        <div class="exercise">
+            <h2>10. Tabela de Multiplicação de 1 a N</h2>
+            <p>Escreva um programa que exiba a tabela de multiplicação de todos os números de 1 até um número fornecido pelo usuário.</p>
+            <hr>
+            <input type="number" id="multiplicacaoLimite" placeholder="Digite um número">
+            <button onclick="tabelaMultiplicacao()">Gerar Tabela</button>
+            <div id="multiplicacaoOutput" class="output"></div>
+        </div>
+    </div>
+
+    <script src="./js/soma.js"></script>
+    <script src="./js/fibonacci.js"></script>
+    <script src="./js/pares.js"></script>
+    <script src="./js/somaImpares.js"></script>
+    <script src="./js/fatorial.js"></script>
+    <script src="./js/reverso.js"></script>
+    <script src="./js/contagemReversiva.js"></script>
+    <script src="./js/contarLetras.js"></script>
+    <script src="./js/ordemDecrescente.js"></script>
+    <script src="./js/tabelaMultiplicacao.js"></script>
+
+</body>
+
+</html>
