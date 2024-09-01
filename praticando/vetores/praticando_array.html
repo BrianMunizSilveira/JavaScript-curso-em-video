@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de JavaScript com Arrays</title>
+    <link rel="shortcut icon" href="../../icon-js.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./css/array.css">
+</head>
+
+<body>
+    <header>
+        <h1>Exercícios de JavaScript com Arrays</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>Exercício 1: Exibir elementos do array</h2>
+            <pre><code>
+            let numeros = [1, 2, 3, 4, 5];
+            // Criando o array 'numeros' com os valores [1, 2, 3, 4, 5].
+            // O índice 0 é 1, o índice 1 é 2, e assim por diante.
+            
+            for (let i = 0; i < numeros.length; i++) {
+            // Para a variável 'i', que recebe o valor 0 como inicial,
+            // enquanto 'i' for menor que o comprimento do array 'numeros',
+            // execute o bloco de código e, após cada iteração, incremente o valor de 'i' em 1.
+            console.log(numeros[i]);
+            // Exibindo no console os valores do array 'numeros' em cada iteração.
+            }
+            </code></pre>
+        </article>
+
+        <article>
+            <h2>Exercício 2: Encontrar o maior número</h2>
+            <pre><code>
+            let numeros = [3, 7, 2, 5, 8];
+            // Criando o array 'numeros' com os valores [3, 7, 2, 5, 8].
+            // O índice 0 é 3, o índice 1 é 7, e assim por diante.
+            
+            let maior = numeros[0];
+            // A variável 'maior' recebe o primeiro elemento do array (neste caso, o valor 3).
+            
+            for (let i = 1; i < numeros.length; i++) {
+            // Para a variável 'i', que se inicia com 1,
+            // enquanto 'i' for menor que a extensão do array 'numeros',
+            // incremente mais um após executar o bloco de código a seguir.
+            if (numeros[i] > maior) {
+                // Se o elemento atual do array 'numeros' for maior que a variável 'maior',
+                // execute o bloco de código.
+                maior = numeros[i];
+                // Atualiza a variável 'maior' com o novo valor maior.
+            }
+            }
+            
+            console.log("O maior número é:", maior);
+            // Exibindo no console o maior número presente no array 'numeros'.
+            </code></pre>
+        </article>
+
+        <article>
+            <h2>Exercício 3: Filtrar números maiores que 10</h2>
+            <pre><code>
+            let numeros = [1, 4, 7, 10, 13, 16, 20];
+            // Criando o array 'numeros' com os valores [1, 4, 7, 10, 13, 16, 20].
+            
+            let maioresQueDez = numeros.filter(function(numero) {
+            // Criando um novo array 'maioresQueDez' que será preenchido com os elementos filtrados do array 'numeros'.
+            // O método 'filter()' percorre cada elemento do array 'numeros' e aplica a função fornecida para determinar se o elemento deve ser incluído no novo array.
+            return numero > 10;
+            // Retorna true se o número for maior que 10, caso contrário, retorna false.
+            });
+            
+            console.log(maioresQueDez);
+            // Exibindo no console o conteúdo do array 'maioresQueDez', que contém apenas os valores do array 'numeros' que são maiores que 10.
+            </code></pre>
+        </article>
+
+        <article>
+            <h2>Exercício 4: Somar elementos do array</h2>
+            <pre><code>
+            let numeros = [5, 15, 12, 23];
+            // Criando o array 'numeros' com os valores [5, 15, 12, 23].
+            
+            let soma = numeros.reduce(function(total, numero) {
+            // A função de callback recebe dois argumentos: 'total' (o acumulador) e 'numero' (o elemento atual do array).
+            // A cada iteração, 'total' é atualizado com a soma do valor acumulado e o valor atual 'numero'.
+            return total + numero;
+            // Retorna a soma do acumulador e do elemento atual.
+            }, 0);
+            // O valor inicial do acumulador é 0.
+            
+            console.log(soma);
+            // Exibindo no console a soma total dos elementos do array 'numeros', que é 55.
+            </code></pre>
+        </article>
+    </main>
+
+</body>
+
+</html>
