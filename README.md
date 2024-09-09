@@ -23,4 +23,4 @@ O repositório está organizado da seguinte forma:
 - **Praticando**: Seção dedicada a exercícios práticos adicionais para consolidar o conhecimento em JavaScript.
 - **Desafios**: Desafios propostos para testar e aprimorar minhas habilidades ao decorrer do curso.
 
-<sub> Curso realizado entre 08/06/2024 á 06/09/2024</sub>
+<sub> Curso realizado entre 08/06/2024 á 06/09/2024 e estudando JS desde então</sub>
