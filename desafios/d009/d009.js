@@ -22,4 +22,7 @@ function reajuste() {
     res.innerHTML += `<p>O salário atual era R$${salarioAtual.toFixed(2)}.</p>`;  // Exibe o salário anterior
     res.innerHTML += `<p>Com um aumento de ${porcentagemReajuste}%, o salário vai aumentar R$${aumento.toFixed(2)} no próximo mês.</p>`;  // Exibe o valor do aumento
     res.innerHTML += `<p>E a partir daí, ${nome} vai passar a ganhar R$${novoSalario.toFixed(2)}.</p>`;  // Exibe o novo salário após o reajuste
+    res.innerHTML += `    <footer>
+        <p>Made with &#X2764;&#XFE0F; by <a href="https://github.com/BrianMunizSilveira" target="_blank" rel="external">Brian Muniz Silveira</a> | Desafio realizado no dia 09/09/2024 &#X2705;.</p>
+    </footer>`
 }
