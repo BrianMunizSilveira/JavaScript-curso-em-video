@@ -1,26 +1,50 @@
 <div align="center">
- 
-# Curso de JavaScript - Curso Em Vídeo
-### 📚 Estudando 📚
 
-<p text-align="justify">
- 
- Este repositório é dedicado as aulas, aos exercícios e desafios praticados durante as aulas do Curso de JavaScript do **Curso em Vídeo**. Todo o material aqui presente está sujeito aos direitos do [@CursoemVídeo](https://github.com/cursoemvideo). No entanto, como um aluno ativo, continuo aprimorando este repositório conforme avanço nos meus estudos e coloco em prática os conceitos aprendidos.</p>
+# 🚀 Curso de JavaScript - Curso em Vídeo
 
-<p text-align="justify">
- 
- Agradeço sinceramente ao [Prof° Guanabara](https://github.com/gustavoguanabara) por proporcionar um ambiente de aprendizado tão valioso.</p>
+### 📚 Estudando e Praticando 📚
 
- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="300px" height="300px"/>
- 
+<p align="justify">
+
+Este repositório é dedicado às aulas, exercícios e desafios praticados durante o **Curso de JavaScript** do [cursoemvideo.com](https://cursoemvideo.com/). Aqui você encontrará todo o material que desenvolvi como parte do meu aprendizado e crescimento em JavaScript.
+
+Todo o conteúdo está sujeito aos direitos do [@CursoemVídeo](https://github.com/cursoemvideo), mas como aluno ativo, continuo aprimorando e expandindo este repositório à medida que coloco em prática os conceitos aprendidos.
+
+Um agradecimento especial ao [Prof. Gustavo Guanabara](https://github.com/gustavoguanabara) por criar um ambiente de aprendizado tão rico e inspirador! 🙏
+
+</p>
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="300px" height="300px"/>
+
 </div>
 
-## Estrutura do Repositório
+---
 
-O repositório está organizado da seguinte forma:
+## 📂 Estrutura do Repositório
 
-- **Índice das Aulas**: Contém links para todos os exercícios abordados nas aulas do curso, organizados por temas e tópicos.
-- **Praticando**: Seção dedicada a exercícios práticos adicionais para consolidar o conhecimento em JavaScript.
-- **Desafios**: Desafios propostos para testar e aprimorar minhas habilidades ao decorrer do curso.
+O repositório está organizado da seguinte maneira:
 
-<sub> Curso realizado entre 08/06/2024 á 06/09/2024 e estudando JS desde então</sub>
+- **📖 Índice das Aulas**  
+  Contém links para todos os exercícios abordados durante as aulas, organizados por temas e tópicos.
+
+- **💻 Praticando**  
+  Uma seção dedicada a exercícios práticos adicionais para consolidar o aprendizado de conceitos fundamentais e avançados em JavaScript.
+
+- **⚡ Desafios**  
+  Desafios propostos ao longo do curso para testar e aprimorar as habilidades adquiridas, indo além do conteúdo básico.
+
+---
+
+## 🗓️ Cronograma
+
+- **Início do Curso:** 08/06/2024
+- **Conclusão do Curso:** 06/09/2024
+- **Estudando JavaScript desde então!**
+
+---
+
+<div align="center">
+
+### 🌟 _“O aprendizado nunca para, e este repositório é a prova disso!”_ 🌟
+
+</div>
