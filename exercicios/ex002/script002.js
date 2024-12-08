@@ -1,3 +1,3 @@
 function clicou() {
-    window.alert('Você clicou no botão!')
+  window.alert("Você clicou no botão!");
 }

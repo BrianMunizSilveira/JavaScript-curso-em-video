@@ -1,9 +1,9 @@
 var c = 1; /* Contador*/
 
-do /*Faça isso*/{
-    console.log(`Dia ${c}`);
-    c++ /* Incremento*/ 
-} while /* Enquanto isso*/ (c <= 6);
+do /*Faça isso*/ {
+  console.log(`Dia ${c}`);
+  c++; /* Incremento*/
+} while (/* Enquanto isso*/ c <= 6);
 
 /*
 var c = 1;
@@ -12,7 +12,6 @@ while (c <= 6) {
     c++
 }
 */
-
 
 /*
 console.log('Tudo bem?');

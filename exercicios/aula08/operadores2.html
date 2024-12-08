@@ -1,163 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Aula 08, Operadores (Parte 2)">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Aula 08, Operadores (Parte 2)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
     <title>Operadores Parte 2</title>
-    <style>
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f4f4f9;
-            color: #333;
-            padding: 20px;
-        }
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-        main {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1, h2 {
-            color: #0056b3;
-        }
-
-        hr {
-            border: none;
-            height: 1px;
-            background: #ddd;
-            margin: 20px 0;
-        }
-
-        ul, ol {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        code {
-            background: #eee;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-
-        pre {
-            background: #eee;
-            padding: 10px;
-            border-radius: 4px;
-            overflow: auto;
-        }
-
-        button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            background: #0056b3;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button > code {
-            color: #000;
-        }
-
-        button:hover {
-            transition: all 0.5s;
-            background: #003572;
-        }
-    </style>
-</head>
-
-<body>
+  <body>
     <main>
-        <h1>Operadores com JavaScript</h1>
-        <hr>
-        <section>
-            <h2>Explicação</h2>
-            <ol>
-                <li><strong>Operadores relacionais e lógicos em JavaScript</strong></li>
-                <hr>
-                <ul>
-                    <li><strong>Operadores relacionais</strong>: utilizados para comparar dois valores e retornar um valor booleano <code>true</code> ou <code>false</code>.
-                        <ul>
-                            <li><code>==</code>: <strong>Igualdade</strong> (verifica se os valores são iguais, não considera o tipo);</li>
-                            <li><code>===</code>: <strong>Estritamente igual</strong> (verifica se os valores e os tipos são iguais);</li>
-                            <li><code>!=</code>: <strong>Diferente</strong> (verifica se os valores são diferentes mas, não considera o tipo);</li>
-                            <li><code>!==</code>: <strong>Estritamente diferente</strong> (verifica se os valores e os tipos são diferentes);</li>
-                            <li><code>&lt;</code>: <strong>Maior que</strong>;</li>
-                            <li><code>&gt;</code>: <strong>Menor que</strong>;</li>
-                            <li><code>&lt;=</code>: <strong>Maior ou igual a</strong>;</li>
-                            <li><code>&gt;=</code>: <strong>Menor ou igual a</strong>;</li>
-                        </ul>
-                    </li>
-                    <hr>
-                    <li><strong>Operadores lógicos</strong>: utilizados para combinar expressões booleanas.
-                        <ul>
-                            <li><code>&&</code>: <strong>E lógico</strong> (retorna true se ambas as expressões forem verdadeiras);</li>
-                            <li><code>||</code>: <strong>Ou lógico</strong> (retorna true se pelo menos uma das expressões for verdadeira);</li>
-                            <li><code>!</code>: <strong>Negação lógica</strong> (inverte o valor booleano da expressão);</li>
-                        </ul>
-                    </li>
-                </ul>
-                <hr>
-                <li><strong>Diferença entre =, == e ===</strong>
-                    <ul>
-                        <li><code>=</code>: <strong>Operador de atribuição</strong> (atribui um valor a uma variável). <br>Exemplo: <code>let x = 5; // Atribui o valor 5 à variável x</code></li>
-                        <li><code>==</code>: <strong>Operador de igualdade</strong> (compara os valores, mas não considera o tipo). <br>Exemplo: <code>5 == '5'; // true, porque os valores são iguais, mesmo sendo de tipos diferentes</code></li>
-                        <li><code>===</code>: <strong>Operador de igualdade estrita</strong> (compara os valores e os tipos). <br>Exemplo: <code>5 === '5'; // false, porque os valores são iguais, mas os tipos são diferentes <br> 5 === 5; // true, porque os valores e os tipos são iguais</code></li>
-                    </ul>
+      <h1>Operadores com JavaScript</h1>
+      <hr />
+      <section>
+        <h2>Explicação</h2>
+        <ol>
+          <li>
+            <strong>Operadores relacionais e lógicos em JavaScript</strong>
+          </li>
+          <hr />
+          <ul>
+            <li>
+              <strong>Operadores relacionais</strong>: utilizados para comparar
+              dois valores e retornar um valor booleano <code>true</code> ou
+              <code>false</code>.
+              <ul>
+                <li>
+                  <code>==</code>: <strong>Igualdade</strong> (verifica se os
+                  valores são iguais, não considera o tipo);
                 </li>
-                <hr>
-                <li><strong>Ordem de precedência dos operadores em JavaScript</strong></li>
-                <p>A ordem de precedência <strong>determina a ordem na qual os operadores são avaliados</strong>. Em JavaScript, a ordem de precedência de alguns operadores comuns é:</p>
-                <ol>
-                    <li><strong>Parênteses</strong> <code><strong>()</strong></code></li>
-                    <li>Operadores de <strong>Incremento/Decremento</strong> <code><strong>++</strong></code> <code><strong>--</strong></code></li>
-                    <li>Operadores <strong>Aritméticos</strong> <code><strong>*</strong></code> <code><strong>/</strong></code> <code><strong>%</strong></code></li>
-                    <li>Operadores <strong>Aritméticos</strong> <code><strong>+</strong></code> <code><strong>-</strong></code></li>
-                    <li>Operadores <strong>Relacionais</strong> <code><strong>&gt;</strong></code> <code><strong>&lt;</strong></code> <code><strong>&gt;=</strong></code> <code><strong>&lt;=</strong></code></li>
-                    <li>Operadores de <strong>Igualdade</strong> <code><strong>==</strong></code> <code><strong>!=</strong></code> <code><strong>===</strong></code> <code><strong>!==</strong></code></li>
-                    <li>Operadores <strong>Lógicos</strong> <code><strong>&&</strong></code> <code><strong>||</strong></code></li>
-                    <li>Operadores <strong>Ternário</strong> <code><strong>?</strong></code> <code><strong>:</strong></code></li>
-                </ol>
-                <hr>
-                <li><strong>Uso do Operador <strong>Ternário</strong></strong></li>
-                <p>O operador ternário <strong>é uma forma concisa de escrever uma expressão condicional</strong>. A sintaxe é:</p>
-                <code>condição ? valorSeVerdadeiro : valorSeFalso;</code>
-                <p>Exemplo:</p>
-                <pre>
+                <li>
+                  <code>===</code>:
+                  <strong>Estritamente igual</strong> (verifica se os valores e
+                  os tipos são iguais);
+                </li>
+                <li>
+                  <code>!=</code>: <strong>Diferente</strong> (verifica se os
+                  valores são diferentes mas, não considera o tipo);
+                </li>
+                <li>
+                  <code>!==</code>:
+                  <strong>Estritamente diferente</strong> (verifica se os
+                  valores e os tipos são diferentes);
+                </li>
+                <li><code>&lt;</code>: <strong>Maior que</strong>;</li>
+                <li><code>&gt;</code>: <strong>Menor que</strong>;</li>
+                <li><code>&lt;=</code>: <strong>Maior ou igual a</strong>;</li>
+                <li><code>&gt;=</code>: <strong>Menor ou igual a</strong>;</li>
+              </ul>
+            </li>
+            <hr />
+            <li>
+              <strong>Operadores lógicos</strong>: utilizados para combinar
+              expressões booleanas.
+              <ul>
+                <li>
+                  <code>&&</code>: <strong>E lógico</strong> (retorna true se
+                  ambas as expressões forem verdadeiras);
+                </li>
+                <li>
+                  <code>||</code>: <strong>Ou lógico</strong> (retorna true se
+                  pelo menos uma das expressões for verdadeira);
+                </li>
+                <li>
+                  <code>!</code>: <strong>Negação lógica</strong> (inverte o
+                  valor booleano da expressão);
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <hr />
+          <li>
+            <strong>Diferença entre =, == e ===</strong>
+            <ul>
+              <li>
+                <code>=</code>: <strong>Operador de atribuição</strong> (atribui
+                um valor a uma variável). <br />Exemplo:
+                <code>let x = 5; // Atribui o valor 5 à variável x</code>
+              </li>
+              <li>
+                <code>==</code>: <strong>Operador de igualdade</strong> (compara
+                os valores, mas não considera o tipo). <br />Exemplo:
+                <code
+                  >5 == '5'; // true, porque os valores são iguais, mesmo sendo
+                  de tipos diferentes</code
+                >
+              </li>
+              <li>
+                <code>===</code>:
+                <strong>Operador de igualdade estrita</strong> (compara os
+                valores e os tipos). <br />Exemplo:
+                <code
+                  >5 === '5'; // false, porque os valores são iguais, mas os
+                  tipos são diferentes <br />
+                  5 === 5; // true, porque os valores e os tipos são
+                  iguais</code
+                >
+              </li>
+            </ul>
+          </li>
+          <hr />
+          <li>
+            <strong>Ordem de precedência dos operadores em JavaScript</strong>
+          </li>
+          <p>
+            A ordem de precedência
+            <strong
+              >determina a ordem na qual os operadores são avaliados</strong
+            >. Em JavaScript, a ordem de precedência de alguns operadores comuns
+            é:
+          </p>
+          <ol>
+            <li>
+              <strong>Parênteses</strong> <code><strong>()</strong></code>
+            </li>
+            <li>
+              Operadores de <strong>Incremento/Decremento</strong>
+              <code><strong>++</strong></code> <code><strong>--</strong></code>
+            </li>
+            <li>
+              Operadores <strong>Aritméticos</strong>
+              <code><strong>*</strong></code> <code><strong>/</strong></code>
+              <code><strong>%</strong></code>
+            </li>
+            <li>
+              Operadores <strong>Aritméticos</strong>
+              <code><strong>+</strong></code> <code><strong>-</strong></code>
+            </li>
+            <li>
+              Operadores <strong>Relacionais</strong>
+              <code><strong>&gt;</strong></code>
+              <code><strong>&lt;</strong></code>
+              <code><strong>&gt;=</strong></code>
+              <code><strong>&lt;=</strong></code>
+            </li>
+            <li>
+              Operadores de <strong>Igualdade</strong>
+              <code><strong>==</strong></code> <code><strong>!=</strong></code>
+              <code><strong>===</strong></code>
+              <code><strong>!==</strong></code>
+            </li>
+            <li>
+              Operadores <strong>Lógicos</strong>
+              <code><strong>&&</strong></code> <code><strong>||</strong></code>
+            </li>
+            <li>
+              Operadores <strong>Ternário</strong>
+              <code><strong>?</strong></code> <code><strong>:</strong></code>
+            </li>
+          </ol>
+          <hr />
+          <li>
+            <strong>Uso do Operador <strong>Ternário</strong></strong>
+          </li>
+          <p>
+            O operador ternário
+            <strong
+              >é uma forma concisa de escrever uma expressão condicional</strong
+            >. A sintaxe é:
+          </p>
+          <code>condição ? valorSeVerdadeiro : valorSeFalso;</code>
+          <p>Exemplo:</p>
+          <pre>
     let idade = 18;
     let podeDirigir = (idade >= 18) ? 'Sim' : 'Não';
     console.log(podeDirigir); // Saída: Sim
-                </pre>
-            </ol>
-            <hr>
-            <button onclick="primeiroex()">Exercício sobre operadores relacionais e lógicos</button>
-            <hr>
-            <button onclick="segundoex()">Exercício sobre <code>=</code>, <code>==</code> e <code>===</code></button>
-            <hr>
-            <button onclick="terceiroex()">Ordem de Precedência</button>
-            <hr>
-            <button onclick="quartoex()">Operador Ternário</button>
-        </section>
+                </pre
+          >
+        </ol>
+        <hr />
+        <button onclick="primeiroex()">
+          Exercício sobre operadores relacionais e lógicos
+        </button>
+        <hr />
+        <button onclick="segundoex()">
+          Exercício sobre <code>=</code>, <code>==</code> e <code>===</code>
+        </button>
+        <hr />
+        <button onclick="terceiroex()">Ordem de Precedência</button>
+        <hr />
+        <button onclick="quartoex()">Operador Ternário</button>
+      </section>
     </main>
     <script src="./operadorespt2.js"></script>
-</body>
-
+  </body>
 </html>

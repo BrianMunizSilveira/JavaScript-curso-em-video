@@ -1,7 +1,7 @@
-let valores = [8, 1, 7, 4, 2, 9]
+let valores = [8, 1, 7, 4, 2, 9];
 
-valores.sort() // Organiza por ordem crescente os valores
-console.log(valores) // Exibe os valores já em ordem crescente
+valores.sort(); // Organiza por ordem crescente os valores
+console.log(valores); // Exibe os valores já em ordem crescente
 
 /* MANEIRA NADA RECOMENDADA ↓↓↓↓*/
 
@@ -25,5 +25,5 @@ for(let pos=0; pos < valores.length; pos++) {
 /* MANEIRA RECOMENDADA ↓↓↓↓*/
 
 for (let pos in valores) {
-    console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
+  console.log(`A posição ${pos} tem o valor ${valores[pos]}`);
 }

@@ -1,0 +1,84 @@
+/* Configurações gerais */
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #0077ff, #00aaff);
+  color: #ffffff;
+}
+
+main {
+  max-width: 600px;
+  margin: 5% auto;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #333333;
+}
+
+/* Título */
+h1 {
+  margin: 1rem 0;
+  color: #0077ff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Input */
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.input-group input[type="number"] {
+  width: 120px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #0077ff;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.input-group span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0077ff;
+}
+
+/* Botão */
+.btn {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #0077ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056cc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Resultado */
+.resultado {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1.2rem;
+  background: #f1f1f1;
+  border-radius: 5px;
+  color: #0077ff;
+  font-weight: bold;
+  border: 2px solid #0077ff;
+}
