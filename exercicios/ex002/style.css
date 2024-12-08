@@ -1,15 +1,43 @@
 body {
-  background-color: rgb(70, 142, 236);
-  color: white;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 95vh;
+  background-color: #000;
+  color: #fff;
   font: normal 20pt Arial;
   text-align: center;
 }
 
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+}
+
 h1 {
-  color: rgb(255, 255, 255);
+  color: rgb(180, 180, 180);
 }
 
 button {
   font-size: 18pt;
   padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
 }

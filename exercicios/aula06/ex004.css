@@ -5,14 +5,33 @@
 }
 
 body {
+  position: relative; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
   background-color: #000;
   color: #fff;
   font: normal 20pt Arial;
 }
 
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+
 h1 {
   text-align: center;
   color: #6cfa73;
+  text-shadow: 1px 1px 0px #000;
+  padding: 10px;
 }
 
 script {
@@ -30,4 +49,15 @@ script {
   margin: auto;
   padding: 5px;
   border: 1px solid seagreen;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font: normal 15pt Arial;
+  }
+
+  main {
+    width: 90%;
+    padding: 30px;
+  }
 }
